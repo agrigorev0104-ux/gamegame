@@ -94,6 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7262959863333616581}
   - component: {fileID: 7788123430231236898}
+  - component: {fileID: 9113492821657641815}
   m_Layer: 0
   m_Name: SlimeVisual
   m_TagString: Untagged
@@ -169,6 +170,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &9113492821657641815
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7036960733826835946}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 824d9826860374842a6cb521ea875eaf, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8889510796728486809
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +203,7 @@ GameObject:
   - component: {fileID: 8431788372393945955}
   - component: {fileID: 7584934468614370856}
   - component: {fileID: 1071185251442064260}
+  - component: {fileID: 6392929134672568597}
   m_Layer: 0
   m_Name: Slime
   m_TagString: Untagged
@@ -229,7 +252,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!70 &7584934468614370856
 CapsuleCollider2D:
@@ -288,3 +311,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!114 &6392929134672568597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8889510796728486809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb396d7ea83e434e8a662f00ad6a049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingState: 1
+  roamingDistanceMax: 7
+  roamingDistanceMin: 3
+  roamingTimerMax: 2
